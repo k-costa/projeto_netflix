@@ -1,0 +1,89 @@
+:root{
+    --preto:#141414;
+    --vermelho:#e50914;
+    --cinza:#AAA;
+    --branco:#fff; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--branco);
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'arial black';
+    font-size: 40px;
+}
+
+
+header nav a{
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+}
+
+header nav a:hover{ /*Estou customizando para quando o mouse passar por cima ele mudar de cor*/
+    color: var(--branco)
+}
+
+header .container{
+    display: flex;
+    flex-direction: row; /*padrão*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Principal*/
+
+.principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/IMG/house_of_cards.jpg'); /*linear-gradient cria essa espécie de película que da o efeito de transparência*/
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal .sinopse_principal{
+    margin-bottom: 90px;
+    margin-top: 10px;
+}
+
+.principal .titulo_principal{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15%;
+}
+
+.button{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: var(--branco);
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover{
+    background-color: white;
+    background-color: black;
+}
+
+.button i{
+    margin-right: 8px;
+}
+
