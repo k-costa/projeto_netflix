@@ -87,3 +87,15 @@ header .container{
     margin-right: 8px;
 }
 
+.principal .container{
+    width: 70%;
+    margin-left: 30px;
+}
+
+.box-filme{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
